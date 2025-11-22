@@ -1,0 +1,35 @@
+.browse-movies h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.browse-filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.movies-count {
+  margin-bottom: 20px;
+  color: #666;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .browse-filters {
+    grid-template-columns: 1fr;
+  }
+}
+

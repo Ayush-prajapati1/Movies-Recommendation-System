@@ -1,0 +1,91 @@
+.movie-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #667eea;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.movie-header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.movie-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.movie-year {
+  color: #666;
+  font-size: 1rem;
+}
+
+.movie-platform {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.movie-details {
+  display: grid;
+  gap: 8px;
+}
+
+.movie-details > div {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.movie-genre,
+.movie-director {
+  line-height: 1.6;
+}
+
+.movie-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.1rem;
+  color: #667eea;
+  margin-top: 5px;
+}
+
+.rating-star {
+  font-size: 1.2rem;
+}
+
+.movie-similarity,
+.movie-predicted {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #ddd;
+  color: #764ba2;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    padding: 15px;
+  }
+  
+  .movie-title {
+    font-size: 1.2rem;
+  }
+}
+
